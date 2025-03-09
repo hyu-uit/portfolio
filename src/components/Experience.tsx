@@ -40,7 +40,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-full h-full object-contain rounded-full'
           />
         </div>
       }

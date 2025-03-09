@@ -3,7 +3,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { link } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -17,15 +17,17 @@ interface ProjectCardProps {
   index: number;
   name: string;
   description: string;
+  contributions: string[];
   tags: Tag[];
   image: string;
-  source_code_link: string;
+  source_code_link?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   index,
   name,
   description,
+  contributions,
   tags,
   image,
   source_code_link,
@@ -47,23 +49,40 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, '_blank')}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+          {source_code_link && (
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+              <div
+                onClick={() => window.open(source_code_link, '_blank')}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={link}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+
+          <div className='mt-4'>
+            <h4 className='text-white font-semibold text-[16px] mb-2'>
+              Key Contributions:
+            </h4>
+            <ul className='list-disc pl-5'>
+              {contributions.map((contribution, idx) => (
+                <li
+                  key={`${name}-contribution-${idx}`}
+                  className='text-secondary text-[14px] mb-1'
+                  dangerouslySetInnerHTML={{ __html: contribution }}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>

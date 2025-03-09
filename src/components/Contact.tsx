@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
           <p className='text-white font-medium'>
             Feel free to reach out to me directly:{' '}
             <span
-              className='text-[#915EFF] cursor-pointer hover:opacity-80'
+              className='text-[#915EFF] cursor-pointer hover:opacity-80 underline'
               onClick={handleCopyEmail}
               title='Click to copy'
             >

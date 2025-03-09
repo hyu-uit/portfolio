@@ -23,6 +23,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  techjdi,
+  wala,
+  android,
+  uit,
+  petforest,
+  kiwivine,
+  imental,
 } from '../assets';
 
 interface NavLink {
@@ -65,9 +72,10 @@ interface ProjectTag {
 interface Project {
   name: string;
   description: string;
+  contributions: string[];
   tags: ProjectTag[];
   image: string;
-  source_code_link: string;
+  source_code_link?: string;
 }
 
 export const navLinks: NavLink[] = [
@@ -96,7 +104,7 @@ export const services: Service[] = [
   },
   {
     title: 'Android Developer',
-    icon: mobile,
+    icon: backend,
   },
   {
     title: 'Designer',
@@ -106,11 +114,11 @@ export const services: Service[] = [
 
 export const technologies: Technology[] = [
   {
-    name: 'HTML 5',
+    name: 'HTML',
     icon: html,
   },
   {
-    name: 'CSS 3',
+    name: 'CSS',
     icon: css,
   },
   {
@@ -134,16 +142,20 @@ export const technologies: Technology[] = [
     icon: tailwind,
   },
   {
-    name: 'git',
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'figma',
+    name: 'Figma',
     icon: figma,
   },
   {
-    name: 'android / java',
-    icon: figma,
+    name: 'Android Java / Kotlin',
+    icon: android,
+  },
+  {
+    name: 'Ant Design',
+    icon: android,
   },
 ];
 
@@ -151,7 +163,7 @@ export const experiences: Experience[] = [
   {
     title: 'Frontend / Mobile Developer',
     company_name: 'WALA ICT',
-    icon: starbucks,
+    icon: wala,
     iconBg: '#383E56',
     date: 'September 2023 - Present',
     points: [
@@ -165,7 +177,7 @@ export const experiences: Experience[] = [
   {
     title: 'Mobile Developer ',
     company_name: 'Tech JDI',
-    icon: tesla,
+    icon: techjdi,
     iconBg: '#E6DEDD',
     date: 'July 2023 - September 2023',
     points: [
@@ -208,6 +220,13 @@ export const projects: Project[] = [
     name: 'Pet Forest',
     description:
       'Pet Forest offers a convenient web-based solution for pet service bookings. Users can effortlessly find and book services through a dedicated site, while administrators utilize a separate site to effectively manage operations.',
+    contributions: [
+      'Led a <b>4-member development team</b>, managing tasks and code reviews',
+      'Collaborated with stakeholders to <b>gather requirements and implement feedback</b>',
+      'Integrated <b>KCP Payment Gateway</b> with responsive UI design',
+      'Optimized <b>CMS performance</b> and API response times',
+      'Implemented <b>Kakao Talk API</b> for messaging and social sharing features',
+    ],
     tags: [
       {
         name: 'next.js',
@@ -230,13 +249,18 @@ export const projects: Project[] = [
         color: 'blue-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: petforest,
+    source_code_link: 'https://petforest.co.kr/',
   },
   {
     name: 'Kiwivine',
     description:
-      'Kiwivine serves as an internal CMS, empowering a translation company to efficiently manage its operations. Key features include task management for members, branch oversight, comprehensive reporting, and statistical analysis for informed decision-making',
+      'Kiwivine serves as an internal PMS, empowering a translation company to efficiently manage its operations. Key features include task management for members, branch oversight, comprehensive reporting, and statistical analysis for informed decision-making',
+    contributions: [
+      'Mentored new backend developer, <b>resolving integration challenges</b> and streamlining processes',
+      'Enhanced core features including <b>Firebase notifications, invoices, and reporting systems</b>',
+      'Optimized table performance for <b>100+ rows and 50+ columns</b> using React hooks',
+    ],
     tags: [
       {
         name: 'react',
@@ -251,13 +275,19 @@ export const projects: Project[] = [
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: kiwivine,
   },
   {
     name: 'iMental',
     description:
       'iMental is a mobile application and accompanying landing page designed to empower individuals with scientifically-backed mental coaching. The platform offers a comprehensive suite of features, including mental state analysis, customized affirmations, and self-management tools, all accessible through a user-friendly mobile app and informative landing page.',
+    contributions: [
+      'Took responsibility for iOS & Android app development, <b>successfully publishing to both app stores</b>',
+      'Implemented secure <b>in-app purchases</b> for content access',
+      'Integrated dual audio libraries for <b>synchronized playback</b>',
+      'Created <b>SVG charts</b> with animations for data visualization',
+      'Set up Firebase for <b>cross-platform push notifications</b> and user engagement',
+    ],
     tags: [
       {
         name: 'react native',
@@ -280,7 +310,34 @@ export const projects: Project[] = [
         color: 'green-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: imental,
+    source_code_link: 'https://www.imental.co.kr/',
+  },
+];
+
+export const schoolActivities = [
+  {
+    title: 'Google Developer Student Clubs - UIT',
+    company_name: 'University of Information Technology',
+    icon: uit,
+    iconBg: '#E6DEDD',
+    date: 'Sep 2021 - Jan 2023',
+    points: [
+      'Led the design and media team for GDSC community',
+      'Created visual content and branding materials for tech events',
+      'Managed social media presence and community engagement',
+    ],
+  },
+  {
+    title: 'Game UIT Hackathon 2022 Contest',
+    company_name: 'Faculty of Software Engineering - UIT',
+    icon: uit,
+    iconBg: '#383E56',
+    date: 'Nov 2022 - Dec 2022',
+    points: [
+      'Led design team for university-wide hackathon event',
+      'Developed event branding and promotional materials',
+      'Coordinated with organizers to ensure consistent visual identity',
+    ],
   },
 ];

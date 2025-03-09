@@ -7,6 +7,9 @@ import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 import uit from './uit.png';
+import se from './se.png';
+import gdsc from './gdsc.png';
+import link from './link.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -21,15 +24,21 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import android from './tech/android.png';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
 import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
+import wala from './wala.jpeg';
+import techjdi from './techjdi.jpg';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import kiwivine from './kiwivine.png';
+import imental from './imental.png';
+import petforest from './petforest.png';
 
 export {
   logo,
@@ -61,4 +70,13 @@ export {
   carrent,
   jobit,
   tripguide,
+  wala,
+  techjdi,
+  android,
+  se,
+  gdsc,
+  kiwivine,
+  imental,
+  petforest,
+  link,
 };
