@@ -16,12 +16,18 @@ const Hero: React.FC = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Huỳnh Thế Vĩ</span>
+          <h1
+            className={`${styles.heroHeadText} text-white font-['Be_Vietnam_Pro']`}
+          >
+            Hi, I'm{' '}
+            <span className='text-[#915EFF] font-["Be_Vietnam_Pro"]'>
+              Huỳnh Thế Vĩ
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications, user <br className='sm:block hidden' />
-            interfaces and 3D visuals
+            I craft modern web & mobile experiences
+            <br className='sm:block hidden' />
+            specializing in React and React Native
           </p>
         </div>
       </div>

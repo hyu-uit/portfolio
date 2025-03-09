@@ -95,11 +95,11 @@ export const services: Service[] = [
     icon: mobile,
   },
   {
-    title: 'Backend Developer',
-    icon: backend,
+    title: 'Android Developer',
+    icon: mobile,
   },
   {
-    title: 'Content Creator',
+    title: 'Designer',
     icon: creator,
   },
 ];
@@ -134,18 +134,6 @@ export const technologies: Technology[] = [
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
     name: 'git',
     icon: git,
   },
@@ -154,62 +142,36 @@ export const technologies: Technology[] = [
     icon: figma,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'android / java',
+    icon: figma,
   },
 ];
 
 export const experiences: Experience[] = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
+    title: 'Frontend / Mobile Developer',
+    company_name: 'WALA ICT',
     icon: starbucks,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'September 2023 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Directed front-end development for iOS, Android, and an Admin website, launching apps on Google Play Store and App Store while leading a team to achieve on-time delivery.',
+      'Engineered in-app purchases, dynamic SVG charts with animations, and parallel audio playback, increasing user engagement and enhancing app functionality.',
+      'Deployed Firebase push notifications, RESTful APIs, and backend integrations, improving data handling efficiency.',
+      'Enhanced application performance by optimizing API response times, reducing table re-rendering time.',
+      'Partnered with clients and designers to refine product requirements, integrating KCP Payment Gateway and Kakao Talk API.',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
+    title: 'Mobile Developer ',
+    company_name: 'Tech JDI',
     icon: tesla,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'July 2023 - September 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Conducted in-depth research on Android Open Source Project (AOSP), analyzing core components to identify optimization opportunities and improve system functionality.',
+      'Developed and customized AOSP modules, enhancing features such as system UI, notifications, and app integrations to meet specific project requirements.',
+      'Documented findings and created technical guides, enabling easier adoption of customized AOSP features for future projects.',
     ],
   },
 ];
@@ -243,41 +205,49 @@ export const testimonials: Testimonial[] = [
 
 export const projects: Project[] = [
   {
-    name: 'Car Rent',
+    name: 'Pet Forest',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Pet Forest offers a convenient web-based solution for pet service bookings. Users can effortlessly find and book services through a dedicated site, while administrators utilize a separate site to effectively manage operations.',
     tags: [
       {
-        name: 'react',
+        name: 'next.js',
         color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
       },
       {
         name: 'tailwind',
         color: 'pink-text-gradient',
+      },
+      {
+        name: 'kakaotalk',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'kcp-payment',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'ant-design',
+        color: 'blue-text-gradient',
       },
     ],
     image: carrent,
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'Job IT',
+    name: 'Kiwivine',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'Kiwivine serves as an internal CMS, empowering a translation company to efficiently manage its operations. Key features include task management for members, branch oversight, comprehensive reporting, and statistical analysis for informed decision-making',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'firebase',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'apexcharts',
         color: 'pink-text-gradient',
       },
     ],
@@ -285,21 +255,29 @@ export const projects: Project[] = [
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'Trip Guide',
+    name: 'iMental',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'iMental is a mobile application and accompanying landing page designed to empower individuals with scientifically-backed mental coaching. The platform offers a comprehensive suite of features, including mental state analysis, customized affirmations, and self-management tools, all accessible through a user-friendly mobile app and informative landing page.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react native',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'react',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'redux-toolkit',
         color: 'pink-text-gradient',
+      },
+      {
+        name: 'rn-reanimated',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'i18n',
+        color: 'green-text-gradient',
       },
     ],
     image: tripguide,
