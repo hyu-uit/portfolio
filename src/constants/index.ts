@@ -30,6 +30,7 @@ import {
   petforest,
   kiwivine,
   imental,
+  antd,
 } from '../assets';
 
 interface NavLink {
@@ -155,7 +156,7 @@ export const technologies: Technology[] = [
   },
   {
     name: 'Ant Design',
-    icon: android,
+    icon: antd,
   },
 ];
 

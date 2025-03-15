@@ -120,7 +120,11 @@ const Works: React.FC = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='text-white text-3xl font-bold mt-20 mb-5 text-center'>
+        Websites
+      </div>
+
+      <div className=' flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
