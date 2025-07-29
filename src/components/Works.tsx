@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         options={{
           max: 45,
           scale: 1,
-          speed: 450,
+          speed: 100,
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
@@ -120,11 +120,7 @@ const Works: React.FC = () => {
         </motion.p>
       </div>
 
-      <div className='text-white text-3xl font-bold mt-20 mb-5 text-center'>
-        Websites
-      </div>
-
-      <div className=' flex flex-wrap gap-7'>
+      <div className=' flex flex-row gap-7 overflow-x-auto'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -133,4 +129,4 @@ const Works: React.FC = () => {
   );
 };
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, 'projects');

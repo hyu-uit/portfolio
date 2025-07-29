@@ -31,6 +31,9 @@ import {
   kiwivine,
   imental,
   antd,
+  cognisian,
+  caresa,
+  freelancer,
 } from '../assets';
 
 interface NavLink {
@@ -87,6 +90,10 @@ export const navLinks: NavLink[] = [
   {
     id: 'work',
     title: 'Work',
+  },
+  {
+    id: 'projects',
+    title: 'Projects',
   },
   {
     id: 'contact',
@@ -162,11 +169,23 @@ export const technologies: Technology[] = [
 
 export const experiences: Experience[] = [
   {
-    title: 'Frontend / Mobile Developer',
+    title: 'Frontend Engineer',
+    company_name: 'Cognisian',
+    icon: cognisian,
+    iconBg: '#fff',
+    date: 'May 2025 - Present',
+    points: [
+      'Built high-performance Progressive Web Apps (PWAs) customized to client workflows and business needs.',
+      'Conducted in-depth research on existing platforms and proposed actionable enhancements to optimize product performance and user experience.',
+      'Collaborated directly with clients to identify workflow inefficiencies, then designed and delivered tailored modules or full-system solutions.',
+    ],
+  },
+  {
+    title: 'Frontend / Mobile Engineer',
     company_name: 'WALA ICT',
     icon: wala,
     iconBg: '#383E56',
-    date: 'September 2023 - Present',
+    date: 'September 2023 - May 2025',
     points: [
       'Directed front-end development for iOS, Android, and an Admin website, launching apps on Google Play Store and App Store while leading a team to achieve on-time delivery.',
       'Engineered in-app purchases, dynamic SVG charts with animations, and parallel audio playback, increasing user engagement and enhancing app functionality.',
@@ -185,6 +204,18 @@ export const experiences: Experience[] = [
       'Conducted in-depth research on Android Open Source Project (AOSP), analyzing core components to identify optimization opportunities and improve system functionality.',
       'Developed and customized AOSP modules, enhancing features such as system UI, notifications, and app integrations to meet specific project requirements.',
       'Documented findings and created technical guides, enabling easier adoption of customized AOSP features for future projects.',
+    ],
+  },
+  {
+    title: 'Freelancer Developer ',
+    company_name: 'Freelancer',
+    icon: freelancer,
+    iconBg: '#E6DEDD',
+    date: '2022 - Present',
+    points: [
+      'Delivered 3 mobile and web apps for startups in car detailing, spa, and pet care industries.',
+      'Implemented features like push notifications, YouTube integration, and multi-language support.',
+      'Provided end-to-end solutions including UI design, development, deployment, and maintenance.',
     ],
   },
 ];
@@ -217,6 +248,36 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    name: 'Caresa & Chanakya',
+    description:
+      'Caresa manages the entire patient journey—from appointment to follow-up—while Chanakya provides real-time clinical decision support and advanced analytics to improve treatment outcomes and operational efficiency. Together, they enable smarter, data-informed care.',
+    contributions: [
+      'Built responsive web interfaces for <b>patients and healthcare staff</b> to streamline digital interactions.',
+      'Developed modular components and <b>export as libraries</b> using React, ShadCN/UI, and Tailwind CSS for rapid scalability.',
+      '<b>Worked closely with clients</b> to understand hospital workflows; proposed UX enhancements that aligned with real-world usage.',
+    ],
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'shadcn/ui',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tanstack router',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: caresa,
+    source_code_link: '',
+  },
   {
     name: 'Pet Forest',
     description:
@@ -253,31 +314,7 @@ export const projects: Project[] = [
     image: petforest,
     source_code_link: 'https://petforest.co.kr/',
   },
-  {
-    name: 'Kiwivine',
-    description:
-      'Kiwivine serves as an internal PMS, empowering a translation company to efficiently manage its operations. Key features include task management for members, branch oversight, comprehensive reporting, and statistical analysis for informed decision-making',
-    contributions: [
-      'Mentored new backend developer, <b>resolving integration challenges</b> and streamlining processes',
-      'Enhanced core features including <b>Firebase notifications, invoices, and reporting systems</b>',
-      'Optimized table performance for <b>100+ rows and 50+ columns</b> using React hooks',
-    ],
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'firebase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'apexcharts',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: kiwivine,
-  },
+
   {
     name: 'iMental',
     description:
@@ -313,6 +350,31 @@ export const projects: Project[] = [
     ],
     image: imental,
     source_code_link: 'https://www.imental.co.kr/',
+  },
+  {
+    name: 'Kiwivine',
+    description:
+      'Kiwivine serves as an internal PMS, empowering a translation company to efficiently manage its operations. Key features include task management for members, branch oversight, comprehensive reporting, and statistical analysis for informed decision-making',
+    contributions: [
+      'Mentored new backend developer, <b>resolving integration challenges</b> and streamlining processes',
+      'Enhanced core features including <b>Firebase notifications, invoices, and reporting systems</b>',
+      'Optimized table performance for <b>100+ rows and 50+ columns</b> using React hooks',
+    ],
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'firebase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'apexcharts',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: kiwivine,
   },
 ];
 

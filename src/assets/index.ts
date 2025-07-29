@@ -26,6 +26,9 @@ import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
 import android from './tech/android.png';
 import antd from './tech/antd.png';
+import cognisian from './cognisian.png';
+import caresa from './caresa.jpeg';
+import freelancer from './freelancer.png';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -81,4 +84,7 @@ export {
   petforest,
   link,
   antd,
+  cognisian,
+  caresa,
+  freelancer,
 };
