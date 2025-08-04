@@ -29,6 +29,9 @@ import antd from './tech/antd.png';
 import cognisian from './cognisian.png';
 import caresa from './caresa.jpeg';
 import freelancer from './freelancer.png';
+import nextjs from './tech/nextjs.svg';
+import tanstack from './tech/tanstack.png';
+import zustand from './tech/zustand.png';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -87,4 +90,7 @@ export {
   cognisian,
   caresa,
   freelancer,
+  nextjs,
+    tanstack,
+    zustand,
 };

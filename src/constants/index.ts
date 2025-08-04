@@ -34,6 +34,8 @@ import {
   cognisian,
   caresa,
   freelancer,
+  zustand,
+  tanstack,
 } from '../assets';
 
 interface NavLink {
@@ -138,16 +140,24 @@ export const technologies: Technology[] = [
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'Zustand',
+    icon: zustand,
+  },
+  {
+    name: 'Tanstack',
+    icon: tanstack,
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: tailwind,
   },
   {
     name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
+    name: 'Ant Design',
+    icon: antd,
   },
   {
     name: 'Git',
@@ -157,29 +167,9 @@ export const technologies: Technology[] = [
     name: 'Figma',
     icon: figma,
   },
-  {
-    name: 'Android Java / Kotlin',
-    icon: android,
-  },
-  {
-    name: 'Ant Design',
-    icon: antd,
-  },
 ];
 
 export const experiences: Experience[] = [
-  {
-    title: 'Frontend Engineer',
-    company_name: 'Cognisian',
-    icon: cognisian,
-    iconBg: '#fff',
-    date: 'May 2025 - Present',
-    points: [
-      'Built high-performance Progressive Web Apps (PWAs) customized to client workflows and business needs.',
-      'Conducted in-depth research on existing platforms and proposed actionable enhancements to optimize product performance and user experience.',
-      'Collaborated directly with clients to identify workflow inefficiencies, then designed and delivered tailored modules or full-system solutions.',
-    ],
-  },
   {
     title: 'Frontend / Mobile Engineer',
     company_name: 'WALA ICT',
@@ -192,6 +182,18 @@ export const experiences: Experience[] = [
       'Deployed Firebase push notifications, RESTful APIs, and backend integrations, improving data handling efficiency.',
       'Enhanced application performance by optimizing API response times, reducing table re-rendering time.',
       'Partnered with clients and designers to refine product requirements, integrating KCP Payment Gateway and Kakao Talk API.',
+    ],
+  },
+  {
+    title: 'Frontend Engineer - Side Projects',
+    company_name: 'Cognisian',
+    icon: cognisian,
+    iconBg: '#fff',
+    date: 'May 2025 - Present',
+    points: [
+      'Built high-performance Progressive Web Apps (PWAs) customized to client workflows and business needs.',
+      'Conducted in-depth research on existing platforms and proposed actionable enhancements to optimize product performance and user experience.',
+      'Collaborated directly with clients to identify workflow inefficiencies, then designed and delivered tailored modules or full-system solutions.',
     ],
   },
   {
@@ -249,36 +251,6 @@ export const testimonials: Testimonial[] = [
 
 export const projects: Project[] = [
   {
-    name: 'Caresa & Chanakya',
-    description:
-      'Caresa manages the entire patient journey—from appointment to follow-up—while Chanakya provides real-time clinical decision support and advanced analytics to improve treatment outcomes and operational efficiency. Together, they enable smarter, data-informed care.',
-    contributions: [
-      'Built responsive web interfaces for <b>patients and healthcare staff</b> to streamline digital interactions.',
-      'Developed modular components and <b>export as libraries</b> using React, ShadCN/UI, and Tailwind CSS for rapid scalability.',
-      '<b>Worked closely with clients</b> to understand hospital workflows; proposed UX enhancements that aligned with real-world usage.',
-    ],
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'shadcn/ui',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tanstack router',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: caresa,
-    source_code_link: '',
-  },
-  {
     name: 'Pet Forest',
     description:
       'Pet Forest offers a convenient web-based solution for pet service bookings. Users can effortlessly find and book services through a dedicated site, while administrators utilize a separate site to effectively manage operations.',
@@ -314,7 +286,36 @@ export const projects: Project[] = [
     image: petforest,
     source_code_link: 'https://petforest.co.kr/',
   },
-
+{
+    name: 'Caresa & Chanakya',
+    description:
+      'Caresa manages the entire patient journey—from appointment to follow-up—while Chanakya provides real-time clinical decision support and advanced analytics to improve treatment outcomes and operational efficiency. Together, they enable smarter, data-informed care.',
+    contributions: [
+      'Built responsive web interfaces for <b>patients and healthcare staff</b> to streamline digital interactions.',
+      'Developed modular components and <b>export as libraries</b> using React, ShadCN/UI, and Tailwind CSS for rapid scalability.',
+      '<b>Worked closely with clients</b> to understand hospital workflows; proposed UX enhancements that aligned with real-world usage.',
+    ],
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'shadcn/ui',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tanstack router',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: caresa,
+    source_code_link: '',
+  },
   {
     name: 'iMental',
     description:

@@ -27,7 +27,8 @@ const Hero: React.FC = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             With <strong>2+ years of experience </strong>
             <br className='sm:block hidden' />
-            I craft modern web and mobile applications<br className='sm:block hidden' /> using React and React Native.
+            I craft modern web and mobile applications
+            <br className='sm:block hidden' /> using React and React Native.
           </p>
         </div>
       </div>
